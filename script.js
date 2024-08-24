@@ -14,8 +14,8 @@ form.addEventListener("submit",(e)=>{
 	.then((finalRes)=>{
 		e.target.submit= "submit"
 		form.reset();
+		e.target.querySelector('button[type="submit"]').innerText = "submit";
 
-		
 		console.log(finalRes)}
 	)
 	e.preventDefault();
